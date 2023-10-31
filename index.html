@@ -12,8 +12,10 @@
 <body>
     <main>
         <p id="result">Générateur de MDP</p>
-        <input type="range" id="range" value="8" max="20" min="4">
-        <div>
+        <div class="range-container">
+            <input type="range" id="range" value="8" max="20" min="4"><span>8</span>
+        </div>
+        <div class="checkbox-container">
             <input type="checkbox" id="lowercase" checked>
             <label for="lowercase" class="selection">a-z</label>
             <input type="checkbox" id="uppercase">
