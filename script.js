@@ -7,7 +7,7 @@ const number = document.getElementById('number');
 const symbols = document.getElementById('symbols');
 const submited = document.getElementById('submited');
 
-
+// Height of the password
 range.addEventListener('input', (e) => {
     rangeDisplay.textContent = range.value;
 });
@@ -19,6 +19,7 @@ symbolsString = ",;:!?./§ù*^$%µ¨£&é(-è_çà)"
 
 let isSomethingChecked = false;
 let result = "";
+
 const pwGenerator = function () {
     isSomethingChecked = false;
     result = "";
@@ -43,14 +44,14 @@ const pwGenerator = function () {
 
     console.log(passwordSettings);
 
-    whatDoYouFuckingWantYouIdiotVSCodePasswordSettingsArray = [...passwordSettings];
-    console.log(whatDoYouFuckingWantYouIdiotVSCodePasswordSettingsArray)
+    // ah, i guess i will fix that
+    passwordArray = [...passwordSettings];
+    console.log(passwordArray)
 
     for (let i = 0; i < range.value; i++) {
-        result += whatDoYouFuckingWantYouIdiotVSCodePasswordSettingsArray[Math.floor((Math.random() * whatDoYouFuckingWantYouIdiotVSCodePasswordSettingsArray.length))]
+        result += passwordArray[Math.floor((Math.random() * passwordArray.length))]
     }
 }
-
 
 submited.addEventListener('click', (e) => {
 
