@@ -60,14 +60,14 @@ submited.addEventListener('click', (e) => {
 
     if (isSomethingChecked == true) {
         resultDisplay.textContent = result;
-        submited.textContent = "Copié!"
+        submited.textContent = "Copy!"
 
         navigator.clipboard.writeText(resultDisplay.textContent)
         setTimeout(() => {
-            submited.textContent = "Générer un nouveau mot de passe!"
+            submited.textContent = "Generate again"
         }, 2000)
     } else {
-        alert("You forget something... hint: check one of thoses box maybe")
+        alert("Check at least one of the box")
     }
 });
 
